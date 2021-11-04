@@ -188,9 +188,10 @@ footer p {
   }
   form {
     flex-direction: row;
+    flex-wrap: wrap; /* added flex wrap */
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    margin: 0px; /* added margin of 0px */
   }
   .form-group {
     flex-direction: column;
@@ -200,3 +201,9 @@ footer p {
 
 }
 
+/* new media query to give button a max width until page is 1000px */
+@media all and (min-width: 1000px) {
+  form button {
+    max-width: 200px;
+  }
+}
